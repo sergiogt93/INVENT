@@ -1,0 +1,49 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: max-content;
+  padding: 5px;
+}
+
+.navbar-title {
+  font-size: 2rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu-actions {
+  flex-wrap: nowrap;
+}
+
+.icon-display {
+  transform: scale(1.5);
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .icon-display {
+    transform: scale(1.5);
+  }
+
+  .navbar-title {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    flex-direction: row;
+  }
+
+  .icon-display {
+    transform: scale(2);
+  }
+
+  .navbar-title {
+    font-size: 2rem;
+  }
+}

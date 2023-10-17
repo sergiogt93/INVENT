@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<main class="main">
+  <section class="head">
+    <h2>LISTA DE ENVIOS</h2>
+    <button mat-raised-button color="warn" (click)="openAddForm()" routerLink="/shippings/new">Añadir</button>
+  </section>
+  <app-list-shippings [shippings]="shippings"></app-list-shippings>
+  <!-- <section *ngIf="shippings && shippings?.length === 0" >
+    <p class="no-list">No hay envios introducidos</p>
+  </section> -->
+</main>

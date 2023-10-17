@@ -1,0 +1,12 @@
+<div class="body">
+  <h2>EDITAR TRANSPORTISTA</h2>
+    <form class="transporter" [formGroup]="form" (ngSubmit)="sendForm()">
+      <mat-form-field appearance="outline">
+        <mat-label>Username</mat-label>
+        <input matInput type="text" formControlName="name">
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">
+        Save
+      </button>
+    </form>
+</div>

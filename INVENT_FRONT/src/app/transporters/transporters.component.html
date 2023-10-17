@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<main class="main">
+  <section class="head">
+    <h2>LISTA DE TRANSPORTISTAS</h2>
+    <button mat-raised-button color="warn" (click)="openAddForm()" routerLink="/transporters/new">Añadir</button>
+  </section>
+  <app-list-transporters [transporters]="transporters"></app-list-transporters>
+  <!-- <section *ngIf="!transporters || transporters.length == 0">
+    <p class="no-list">No hay transporters introducidos</p>
+  </section> -->
+</main>

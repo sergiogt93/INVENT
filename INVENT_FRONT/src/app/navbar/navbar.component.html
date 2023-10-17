@@ -1,0 +1,13 @@
+<mat-toolbar color="primary" class="navbar">
+  <h2 class="navbar-title">INVENT</h2>
+  <div class="menu">
+    <a mat-button color="accent" routerLink="/home"><mat-icon class="icon-display">home</mat-icon></a>
+    <a mat-button color="accent" routerLink="/users"><mat-icon class="icon-display"> person_pin</mat-icon></a>
+    <a mat-button color="accent" routerLink="/transporters"><mat-icon class="icon-display">local_shipping</mat-icon></a>
+    <a mat-button color="accent" routerLink="/shippings"><mat-icon class="icon-display">local_post_office</mat-icon></a>
+  </div>
+  <mat-dialog-actions class="menu menu-actions" *ngIf="!isAuth()">
+    <button mat-raised-button color="warn" (click)="openDialogSignIn()">Iniciar Sesion</button>
+    <button mat-raised-button color="warn" (click)="openDialogSignUp()">Registrarse</button>
+  </mat-dialog-actions>
+</mat-toolbar>

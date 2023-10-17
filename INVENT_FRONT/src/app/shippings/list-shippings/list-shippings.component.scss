@@ -1,0 +1,32 @@
+.list-shippings {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.card-actions {
+  margin: 5px;
+  display: flex;
+  gap: 20px;
+}
+
+mat-card-header, mat-card-content {
+  padding: 10px;
+}
+
+mat-card-subtitle {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .list-shippings {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .list-shippings {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

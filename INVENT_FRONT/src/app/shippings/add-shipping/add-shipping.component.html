@@ -1,0 +1,28 @@
+<div class="body">
+  <h2>AÑADIR ENVIO</h2>
+    <form class="shipping" [formGroup]="form" (ngSubmit)="sendForm()">
+      <mat-form-field appearance="outline">
+        <mat-label>Dirreción de destino</mat-label>
+        <input matInput type="text" formControlName="destinationAddress">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Código Postal</mat-label>
+        <input matInput type="text" formControlName="codePostal">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Nombre de destino</mat-label>
+        <input matInput type="text" formControlName="destinationName">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Nombre de remitente</mat-label>
+        <input matInput type="text" formControlName="senderName">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label></mat-label>
+        <input matInput type="number" min="0" formControlName="weight">
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">
+        Save
+      </button>
+    </form>
+</div>
