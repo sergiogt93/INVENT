@@ -76,6 +76,10 @@ $ npm run test:cov
 ```
 
 ## CONFIGURATION PROJECT
+
+```bash
+Remember generate and fill out file .env watching example .env template
+```
 ```bash
   The first time you have to change this variable in the file bd/orm.config.ts, to be able to create the database automatically, because you have not done the migration through the command
 ```
