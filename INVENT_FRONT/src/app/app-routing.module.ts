@@ -18,6 +18,7 @@ const routes: Routes = [
   {
     path: 'transporters',
     component: TransportersComponent,
+    canActivate: [loginGuard],
     children: [
       {
         path: 'new',
@@ -31,6 +32,7 @@ const routes: Routes = [
   },
   {
     path: 'shippings',
+    canActivate: [loginGuard],
     component: ShippingsComponent,
     children: [
       {

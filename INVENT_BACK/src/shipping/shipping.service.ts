@@ -54,7 +54,9 @@ export class ShippingService {
   }
 
   findAll() {
-    return `This action returns all shipping`;
+    return this.shippingRepository.find({
+      relations: ['transporter'],
+    });
   }
 
   findOne(id: number) {

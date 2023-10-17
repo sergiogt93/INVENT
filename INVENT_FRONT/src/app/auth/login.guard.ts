@@ -10,7 +10,7 @@ export const loginGuard: CanActivateFn = () => {
   const authService = inject(AuthService);
   const snackBar = inject(MatSnackBar);
 
-  if (tokenService.isLogged() === false || authService.isVerifyToken() === false) {
+  if (tokenService.isLogged() === false && authService.isVerifyToken() === false) {
     router.navigate(['home']);
     return false;
   }

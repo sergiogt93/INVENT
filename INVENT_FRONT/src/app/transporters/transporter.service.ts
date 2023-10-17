@@ -33,7 +33,7 @@ export class TransporterService {
   public readonly transporters$: Observable<ITransporter[]> = this._store$.asObservable();
 
   constructor() {
-    this.baseUrl = 'http://localhost:3000/api/v1/transporter';
+    this.baseUrl = 'http://localhost:3000/api/v1/transporters';
     this.httpHeaders = new HttpHeaders({
       'Content-Type': 'application/json',
       'Authorization': this.tokenService.getToken()!

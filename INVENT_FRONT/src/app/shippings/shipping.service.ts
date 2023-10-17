@@ -11,6 +11,11 @@ export interface IShipping {
   destinationName: string;
   senderName: string;
   weight: number;
+  transporter: {
+    id: number;
+    name: string;
+    deleteAt: Date | null;
+  }
 }
 
 export interface IAddShipping {
