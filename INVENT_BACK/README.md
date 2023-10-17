@@ -83,10 +83,10 @@ Remember generate and fill out file .env watching example .env template
 ```bash
   The first time you have to change this variable in the file bd/orm.config.ts, to be able to create the database automatically, because you have not done the migration through the command
 ```
-<span>https://raw.githubusercontent.com/sergiogt93/INVENT/main/.github/img/ormconfigtrue.png</span>
+<span>https://github.com/sergiogt93/INVENT/blob/main/INVENT_BACK/.github/img/ormconfigtrue.png</span>
 
 ```bash
   Remember go back to the previous configuration
 ```
 
-<span>https://raw.githubusercontent.com/sergiogt93/INVENT/main/.github/img/ormconfig.png</span>
+<span>https://github.com/sergiogt93/INVENT/blob/main/INVENT_BACK/.github/img/ormconfig.png</span>
