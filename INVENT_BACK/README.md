@@ -80,13 +80,25 @@ $ npm run test:cov
 ```bash
 Remember generate and fill out file .env watching example .env template
 ```
-```bash
-  The first time you have to change this variable in the file bd/orm.config.ts, to be able to create the database automatically, because you have not done the migration through the command
-```
-![Image text](https://github.com/sergiogt93/INVENT/blob/main/INVENT_BACK/.github/img/ormconfigtrue.png)
 
+## CONFIGURATION DATABASE
 ```bash
-  Remember go back to the previous configuration
-```
+# To synchronize a database schema use:
+# Be careful running this command in production - schema sync may cause data loss if you don't use it wisely. Check which sql queries it will run before running on production.
+$ npm run typeorm:schema:sync
 
-![Image text](https://github.com/sergiogt93/INVENT/blob/main/INVENT_BACK/.github/img/ormconfig.png)
+# Create does not really do any database sync. It just makes template for your new migration.
+$ npm run migration:create path_to_file
+# npm run migration:create ./bd/migrations/initialMigration.ts
+
+# try to make your defined entity appear in database.
+$ npm run migration:generate path_to_file
+# npm run migration:generate ./bd/migrations/initialMigration.ts
+
+# To execute all pending migrations use following
+$ npm run migration:run
+
+# To revert the most recently executed migration use the
+$ npm run migration:revert
+
+```

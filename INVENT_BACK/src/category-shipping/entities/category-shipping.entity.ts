@@ -1,6 +1,6 @@
 import { Entity, Column, OneToMany } from 'typeorm';
 import { ACRONYMS_SHIPPING } from '../enums/intervalShipping.enum';
-import { Shipping } from 'src/shipping/entities/shipping.entity';
+import { Shipping } from '../../shipping/entities/shipping.entity';
 
 @Entity()
 export class CategoryShipping {

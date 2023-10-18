@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { ACRONYMS_SHIPPING } from 'src/category-shipping/enums/intervalShipping.enum';
-import { CategoryShipping } from 'src/category-shipping/entities/category-shipping.entity';
+import { ACRONYMS_SHIPPING } from '../../src/category-shipping/enums/intervalShipping.enum';
+import { CategoryShipping } from '../../src/category-shipping/entities/category-shipping.entity';
 
 interface CategoryShippingData {
   acronym: ACRONYMS_SHIPPING;

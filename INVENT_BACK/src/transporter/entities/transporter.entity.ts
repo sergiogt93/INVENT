@@ -1,5 +1,5 @@
-import { Shipping } from 'src/shipping/entities/shipping.entity';
-import { TransporterToProvince } from 'src/transporter-to-province/entities/transporter-to-province.entity';
+import { Shipping } from '../../shipping/entities/shipping.entity';
+import { TransporterToProvince } from '../../transporter-to-province/entities/transporter-to-province.entity';
 import { Entity, Column, DeleteDateColumn, OneToMany } from 'typeorm';
 
 @Entity()

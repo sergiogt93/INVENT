@@ -1,4 +1,4 @@
-import { TransporterToProvince } from 'src/transporter-to-province/entities/transporter-to-province.entity';
+import { TransporterToProvince } from '../../transporter-to-province/entities/transporter-to-province.entity';
 import { Entity, Column, OneToMany } from 'typeorm';
 
 @Entity()

@@ -1,5 +1,5 @@
-import { CategoryShipping } from 'src/category-shipping/entities/category-shipping.entity';
-import { Transporter } from 'src/transporter/entities/transporter.entity';
+import { CategoryShipping } from '../../category-shipping/entities/category-shipping.entity';
+import { Transporter } from '../../transporter/entities/transporter.entity';
 import { Column, Entity, ManyToOne } from 'typeorm';
 
 @Entity()

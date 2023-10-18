@@ -1,6 +1,6 @@
 import { Column, Entity, ManyToOne } from 'typeorm';
-import { Transporter } from 'src/transporter/entities/transporter.entity';
-import { Province } from 'src/provinces/entities/province.entity';
+import { Transporter } from '../../transporter/entities/transporter.entity';
+import { Province } from '../../provinces/entities/province.entity';
 
 @Entity()
 export class TransporterToProvince {
