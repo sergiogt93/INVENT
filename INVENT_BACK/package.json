@@ -21,7 +21,7 @@
     "typeorm:cli": "ts-node ./node_modules/typeorm/cli",
     "migration:create": "npm run typeorm:cli -- migration:create",
     "migration:generate": "npm run typeorm:cli -- -d ./bd/orm.migrations.config.ts migration:generate",
-    "migration:run": "npm run typeorm:cli migration:run -- -d ./bd/orm.config.ts",
+    "migration:run": "npm run typeorm:cli migration:run -- -d ./bd/orm.migrations.config.ts",
     "migration:revert": "npm run typeorm:cli -- -d ./bd/orm.migrations.config.ts migration:revert",
     "seed": "npm run typeorm:cli seed -d bd/orm.config.ts"
   },

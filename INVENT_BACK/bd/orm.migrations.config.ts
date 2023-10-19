@@ -16,14 +16,7 @@ const ormconfig: DataSourceOptions = {
   username: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
-  entities: [
-    Province,
-    Transporter,
-    User,
-    CategoryShipping,
-    Shipping,
-    TransporterToProvince,
-  ],
+  entities: [__dirname + '../src/**/*.entity.js'],
   migrations: ['./dist/bd/migrations/**/*{.js,.ts}'],
   synchronize: false, // do not set it true in production application,
 };
