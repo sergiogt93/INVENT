@@ -12,7 +12,9 @@ import { ormconfig } from 'bd/orm.config';
 
 @Module({
   imports: [
-    ConfigModule.forRoot(),
+    ConfigModule.forRoot({
+      envFilePath: '.env',
+    }),
     TypeOrmModule.forRoot(ormconfig),
     UsersModule,
     AuthModule,

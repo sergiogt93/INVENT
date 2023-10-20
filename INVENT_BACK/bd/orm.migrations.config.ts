@@ -1,13 +1,9 @@
+import { ConfigModule } from '@nestjs/config';
 import { DataSource, DataSourceOptions } from 'typeorm';
-import { config } from 'dotenv';
-import { Province } from '../src/provinces/entities/province.entity';
-import { Transporter } from '../src/transporter/entities/transporter.entity';
-import { User } from '../src/users/entities/user.entity';
-import { CategoryShipping } from '../src/category-shipping/entities/category-shipping.entity';
-import { Shipping } from '../src/shipping/entities/shipping.entity';
-import { TransporterToProvince } from '../src/transporter-to-province/entities/transporter-to-province.entity';
 
-config();
+ConfigModule.forRoot({
+  envFilePath: '.env',
+});
 
 const ormconfig: DataSourceOptions = {
   type: 'mysql',
@@ -17,8 +13,8 @@ const ormconfig: DataSourceOptions = {
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
   entities: [__dirname + '../src/**/*.entity.js'],
-  migrations: ['./dist/bd/migrations/**/*{.js,.ts}'],
-  synchronize: false, // do not set it true in production application,
+  migrations: [__dirname + './dist/bd/migrations/**/*{.js,.ts}'],
+  synchronize: false,
 };
 
 export const bdconfig = new DataSource(ormconfig);
