@@ -7,7 +7,6 @@ import { Transporter } from './entities/transporter.entity';
 import { TransporterToProvince } from '../transporter-to-province/entities/transporter-to-province.entity';
 import { TransporterToProvinceModule } from '../transporter-to-province/transporter-to-province.module';
 import { ProvincesModule } from 'src/provinces/provinces.module';
-import { TransporterSeeder } from 'bd/seeders/transporter.seeder';
 
 @Module({
   imports: [
@@ -16,7 +15,7 @@ import { TransporterSeeder } from 'bd/seeders/transporter.seeder';
     ProvincesModule,
   ],
   controllers: [TransporterController],
-  providers: [TransporterService, TransporterSeeder],
+  providers: [TransporterService],
   exports: [TransporterService],
 })
 export class TransporterModule {}

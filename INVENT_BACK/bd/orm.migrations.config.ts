@@ -12,7 +12,7 @@ const ormconfig: DataSourceOptions = {
   username: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
-  entities: [__dirname + '../src/**/*.entity.js'],
+  entities: [__dirname + '../src/**/*.entity.ts'],
   migrations: [__dirname + './dist/bd/migrations/**/*{.js,.ts}'],
   synchronize: false,
 };

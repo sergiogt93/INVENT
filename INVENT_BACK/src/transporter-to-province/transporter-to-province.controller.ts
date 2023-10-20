@@ -6,11 +6,17 @@ import {
   Patch,
   Param,
   Delete,
+  UseGuards
 } from '@nestjs/common';
+import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { TransporterToProvinceService } from './transporter-to-province.service';
 import { CreateTransporterToProvinceDto } from './dto/create-transporter-to-province.dto';
 import { UpdateTransporterToProvinceDto } from './dto/update-transporter-to-province.dto';
+import { AuthGuard } from '../../src/auth/auth.guard';
 
+@UseGuards(AuthGuard)
+@ApiTags('transporter-to-province')
+@ApiBearerAuth('JWT-auth')
 @Controller('transporter-to-province')
 export class TransporterToProvinceController {
   constructor(
