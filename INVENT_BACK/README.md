@@ -14,6 +14,7 @@ You are going to develop an administration panel for a freight forwarding interm
 - MYSQL
 - BCRYPTJS
 - JWT
+- SWAGGER
 ```
 
 ## Description
@@ -101,4 +102,14 @@ $ npm run migration:run
 # To revert the most recently executed migration use the
 $ npm run migration:revert
 
+```
+
+## VIEW SWAGGER API
+First execute 
+```bash
+npm run start:dev
+```
+After navigate to url:
+```bash
+localhost:3000/docs
 ```
