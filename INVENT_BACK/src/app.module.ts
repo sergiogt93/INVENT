@@ -8,7 +8,7 @@ import { ShippingModule } from './shipping/shipping.module';
 import { TransporterModule } from './transporter/transporter.module';
 import { CategoryShippingModule } from './category-shipping/category-shipping.module';
 import { TransporterToProvinceModule } from './transporter-to-province/transporter-to-province.module';
-import { ormconfig } from 'bd/orm.config';
+import { ormconfig } from '../bd/orm.config';
 
 @Module({
   imports: [
