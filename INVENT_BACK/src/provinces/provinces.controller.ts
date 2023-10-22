@@ -6,7 +6,7 @@ import {
   Patch,
   Param,
   Delete,
-  UseGuards
+  UseGuards,
 } from '@nestjs/common';
 import { ApiTags, ApiBearerAuth } from '@nestjs/swagger';
 
@@ -14,7 +14,7 @@ import { ProvincesService } from './provinces.service';
 
 import { CreateProvinceDto } from './dto/create-province.dto';
 import { UpdateProvinceDto } from './dto/update-province.dto';
-import { AuthGuard } from '../../src/auth/auth.guard';
+import { AuthGuard } from '#src/auth/auth.guard';
 
 @UseGuards(AuthGuard)
 @ApiTags('provinces')

@@ -9,7 +9,7 @@ import { RegisterDto } from './dto/register.dto';
 import { LoginDto } from './dto/login.dto';
 
 import { JwtService } from '@nestjs/jwt';
-import { UsersService } from '../../src/users/users.service';
+import { UsersService } from '#src/users/users.service';
 import { JWT_CONSTANTS } from './constants/jwt.constants';
 
 @Injectable()

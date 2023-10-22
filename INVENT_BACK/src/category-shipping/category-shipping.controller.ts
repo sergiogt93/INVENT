@@ -6,13 +6,13 @@ import {
   Patch,
   Param,
   Delete,
-  UseGuards
+  UseGuards,
 } from '@nestjs/common';
 import { ApiTags, ApiBearerAuth } from '@nestjs/swagger';
 import { CategoryShippingService } from './category-shipping.service';
 import { CreateCategoryShippingDto } from './dto/create-category-shipping.dto';
 import { UpdateCategoryShippingDto } from './dto/update-category-shipping.dto';
-import { AuthGuard } from '../../src/auth/auth.guard';
+import { AuthGuard } from '#src/auth/auth.guard';
 
 @UseGuards(AuthGuard)
 @ApiTags('category-shipping')

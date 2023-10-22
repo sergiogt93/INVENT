@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Province } from '../../src/provinces/entities/province.entity';
+import { Province } from '#src/provinces/entities/province.entity';
 import { Repository } from 'typeorm';
 
 interface ProvinceData {

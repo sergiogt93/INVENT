@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Transporter } from '../../src/transporter/entities/transporter.entity';
+import { Transporter } from '#src/transporter/entities/transporter.entity';
 
 interface TransporterData {
   name: string;

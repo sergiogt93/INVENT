@@ -9,7 +9,7 @@ import {
   UseGuards,
 } from '@nestjs/common';
 
-import { AuthGuard } from '../../src/auth/auth.guard';
+import { AuthGuard } from '#src/auth/auth.guard';
 
 import { TransporterService } from './transporter.service';
 import { CreateTransporterDto } from './dto/create-transporter.dto';

@@ -10,8 +10,8 @@ export const ormconfig: TypeOrmModuleOptions = {
   username: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
-  entities: [__dirname + '../src/**/*.entity.ts'],
+  entities: ['#src/**/*.entity.ts'],
   autoLoadEntities: true,
-  migrations: [__dirname + './migrations/**/*{.ts,.js}'],
+  migrations: ['#bd/migrations/**/*{.ts,.js}'],
   synchronize: false, // do not set it true in production application,
 };
