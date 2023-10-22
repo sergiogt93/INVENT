@@ -2,10 +2,10 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { CreateShippingDto } from './dto/create-shipping.dto';
-import { TransporterService } from 'src/transporter/transporter.service';
-import { Transporter } from 'src/transporter/entities/transporter.entity';
-import { CategoryShippingService } from 'src/category-shipping/category-shipping.service';
-import { calculatePrice } from 'src/category-shipping/enums/intervalShipping.enum';
+import { TransporterService } from '../../src/transporter/transporter.service';
+import { Transporter } from '../../src/transporter/entities/transporter.entity';
+import { CategoryShippingService } from '../../src/category-shipping/category-shipping.service';
+import { calculatePrice } from '../../src/category-shipping/enums/intervalShipping.enum';
 // import { UpdateShippingDto } from './dto/update-shipping.dto';
 import { Shipping } from './entities/shipping.entity';
 

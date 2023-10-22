@@ -4,10 +4,10 @@ import { TransporterToProvinceService } from './transporter-to-province.service'
 import { TransporterToProvinceController } from './transporter-to-province.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { TransporterToProvince } from './entities/transporter-to-province.entity';
-import { Transporter } from 'src/transporter/entities/transporter.entity';
-import { Province } from 'src/provinces/entities/province.entity';
-import { TransporterModule } from 'src/transporter/transporter.module';
-import { ProvincesModule } from 'src/provinces/provinces.module';
+import { Transporter } from '../../src/transporter/entities/transporter.entity';
+import { Province } from '../../src/provinces/entities/province.entity';
+import { TransporterModule } from '../../src/transporter/transporter.module';
+import { ProvincesModule } from '../../src/provinces/provinces.module';
 
 @Module({
   imports: [

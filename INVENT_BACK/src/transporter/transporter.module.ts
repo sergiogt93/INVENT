@@ -6,7 +6,7 @@ import { TransporterController } from './transporter.controller';
 import { Transporter } from './entities/transporter.entity';
 import { TransporterToProvince } from '../transporter-to-province/entities/transporter-to-province.entity';
 import { TransporterToProvinceModule } from '../transporter-to-province/transporter-to-province.module';
-import { ProvincesModule } from 'src/provinces/provinces.module';
+import { ProvincesModule } from '../../src/provinces/provinces.module';
 
 @Module({
   imports: [

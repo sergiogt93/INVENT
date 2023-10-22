@@ -6,7 +6,7 @@ import { CreateTransporterDto } from './dto/create-transporter.dto';
 import { UpdateTransporterDto } from './dto/update-transporter.dto';
 
 import { Transporter } from './entities/transporter.entity';
-import { TransporterToProvinceService } from 'src/transporter-to-province/transporter-to-province.service';
+import { TransporterToProvinceService } from '../../src/transporter-to-province/transporter-to-province.service';
 
 const TRANPORTER_DEFAULT = 'invent';
 @Injectable()
@@ -18,7 +18,9 @@ export class TransporterService {
   ) {}
 
   create(createTransporterDto: CreateTransporterDto) {
-    if (this.transporterRepository.findOneBy({ name: createTransporterDto.name })) {
+    if (
+      this.transporterRepository.findOneBy({ name: createTransporterDto.name })
+    ) {
       return new BadRequestException('Ya existe este transportista');
     }
 
@@ -34,7 +36,9 @@ export class TransporterService {
   }
 
   async update(id: number, updateTransporterDto: UpdateTransporterDto) {
-    if (this.transporterRepository.findOneBy({ name: updateTransporterDto.name })) {
+    if (
+      this.transporterRepository.findOneBy({ name: updateTransporterDto.name })
+    ) {
       return new BadRequestException('Ya existe este transportista');
     }
     return this.transporterRepository.update(id, updateTransporterDto);
